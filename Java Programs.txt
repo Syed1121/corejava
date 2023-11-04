@@ -1,0 +1,3593 @@
+1./*Write a java program to print Welcome java*/
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        System.out.print("Welcome to java");
+    }
+}
+
+
+2./*Write a java program to print Multiple statements*/
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        System.out.print("Welcome to java");
+	System.out.print("Java is an easy language");
+    }
+}
+
+
+3./*Write a java program to print Multiple statements in new line*/
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        System.out.print("Welcome to java");
+	System.out.print("Java is an easy language");
+    }
+}
+
+4./*Write a java program to print Multiple statements in new line and tab */
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        System.out.print("Welcome to java");
+	System.out.print("\tJava is an easy language");
+    }
+}
+
+5./*Write a jave program to print a value using variable*/
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5;
+        System.out.print("Value of A is "+a);
+    }
+}
+
+6./*Write a jave program to print multible values using variables*/
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3;
+        System.out.println("Value of A is "+a);
+        System.out.println("Value of B is "+b);
+    }
+}
+
+7./*Write a jave program to print multible values using variables in single line*/
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3;
+        System.out.println("Value of A is "+a+"\t"+"B is "+b);
+    }
+}
+
+8./*Write a java program to swap two numbers using additional variable*//
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3,c;
+        System.out.println("Value Before Swap A="+a+"\t"+"B="+b);
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("Value After Swap A="+a+"\t"+"B="+b);
+    }
+}
+
+9./*Write a java program to swap two numbers using Arthimetic Operator*//
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3;
+        System.out.println("Value Before Swap A="+a+"\t"+"B="+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("Value After Swap A="+a+"\t"+"B="+b);
+    }
+}
+
+10./*Write a java program to swap two numbers using Arthimetic Operator*//
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3;
+        System.out.println("Value Before Swap A="+a+"\t"+"B="+b);
+        a=a*b;
+        b=a/b;
+        a=a/b;
+        System.out.println("Value After Swap A="+a+"\t"+"B="+b);
+    }
+}
+
+
+11./*Write a java program to swap two numbers using Bitwise Operator*//
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        int a=5,b=3;
+        System.out.println("Value Before Swap A="+a+"\t"+"B="+b);
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println("Value After Swap A="+a+"\t"+"B="+b);
+    }
+}
+
+12./* Write a jave program to print book details*/
+
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        String bcode="B101";
+        int bno=101;
+        String bname="Ram";
+        float bprice=456.75f;
+        char bpcode='u';
+        boolean bav=true;
+        System.out.println("-------------------------------------------------");
+        System.out.println("\t Book Details");
+        System.out.println("-------------------------------------------------");
+        System.out.println("Book Code="+bcode);
+        System.out.println("Book Number="+bno);
+        System.out.println("Book Name="+bname);
+        System.out.println("Book Price="+bprice);
+        System.out.println("Book Print Code="+bpcode);
+        System.out.println("Book Availability="+bav);
+        System.out.println("-------------------------------------------------");
+    }
+}
+
+13./* Write a jave program to print Employee details*/
+import java.lang.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+        String ecode="E101";
+        int eno=101;
+        String ename="Ram";
+        double esal=456123.75;
+        float epf=5231.45f;
+        char egrade='A';
+        System.out.println("-------------------------------------------------");
+        System.out.println("\t Employee Details");
+        System.out.println("-------------------------------------------------");
+        System.out.println("Employee Code="+ecode);
+        System.out.println("Employee Number="+eno);
+        System.out.println("Employee Name="+ename);
+        System.out.println("Employee Salary"+esal);
+        System.out.println("Provident Fund="+epf);
+        System.out.println("Employee Grade="+egrade);
+        System.out.println("-------------------------------------------------");
+    }
+}
+
+14)
+
+15)
+
+16)
+
+17) //* Write a java program Print Employee Details using keyboard*//
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Main
+{
+    public static void main(String args[])throws IOException
+    {
+        int eno;
+        String ename;
+        double esal;
+        float epf;
+        char egrade;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter Eno..:");
+        eno=Integer.parseInt(br.readLine());
+        
+        System.out.print("Enter Ename..:");
+        ename=br.readLine();
+        
+        System.out.print("Enter ESalary..:");
+        esal=Double.parseDouble(br.readLine());
+        
+        System.out.print("Enter EPF..:");
+        epf=Float.parseFloat(br.readLine());
+        
+        System.out.print("Enter EGrade..:");
+        egrade=(char)br.read();
+        
+        System.out.println("================================================");
+        System.out.println("\tEMPLOYEE DETAILS");
+        System.out.println("================================================");
+        System.out.println("Eno...:"+eno);
+        System.out.println("EName..:"+ename);
+        System.out.println("ESalary..:"+esal);
+        System.out.println("EPF..:"+epf);
+        System.out.println("EGrade..:"+egrade);
+        System.out.println("================================================");
+}
+}
+
+
+18) //* Write a java program to print your age using Scanner class*//
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        String name;
+        System.out.print("Enter Your age..:");
+        name=SC.next();
+        System.out.println("Name you are entered..:"+name);
+}
+}
+
+
+19) //* Write a java program to print your age using Scanner class*//
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int age;
+        System.out.print("Enter Your age..:");
+        age=SC.nextInt();
+        System.out.println("Age you are entered..:"+age);
+}
+}
+
+
+20) //* Write a java program to Swap two numbers using Scanner class*//
+
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int a,b;
+        System.out.print("Enter A value..:");
+        a=SC.nextInt();
+        System.out.print("Enter B value..:");
+        b=SC.nextInt();
+        System.out.println("Value before Swap A..:"+a+"\t"+"B..:"+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("Value After Swap A..:"+a+"\t"+"B..:"+b);
+
+}
+}
+
+
+21) //* Write a java program to perform arthimetic operations using Scanner class*//
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int a,b,c;
+        System.out.print("Enter A value..:");
+        a=SC.nextInt();
+        System.out.print("Enter B value..:");
+        b=SC.nextInt();
+        System.out.println("Value of A  "+a+"\t"+"B  "+b);
+        c=a+b;
+        System.out.println("Addition..:"+c);
+        
+        c=a-b;
+        System.out.println("Subtraction..:"+c);
+        
+        c=a*b;
+        System.out.println("Multiplication..:"+c);
+        
+        c=a/b;
+        System.out.println("Division..:"+c);
+        
+        c=a%b;
+        System.out.println("Modlus..:"+c);
+    }
+}
+
+
+22)//* Write a java program to calculate area of a rectangle*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int l,b,a;
+        System.out.print("Enter Length..:");
+        l=SC.nextInt();
+        System.out.print("Enter Breadth...:");
+        b=SC.nextInt();
+        a=l*b;
+        System.out.print("Area of a rectangle.. "+a);
+    }
+}
+
+
+23)//* Write a java progrm to calculate Area and circumference of a circle*//
+
+import java.util.*;  
+public class Main  
+{  
+public static void main(String args[])  
+{  
+double c,a;   
+int r;  
+Scanner sc=new Scanner (System.in);  
+System.out.print("Enter the radius of the circle: ");  
+r=sc.nextInt();  
+a=Math.PI*(r*r);  
+System.out.println("The area of the circle is: "+a);  
+c=Math.PI*2*r;  
+System.out.println("The circumference of the circle is: "+c);  
+}  
+}  
+
+24) //*Write a java program to calculate Simple Intrest and Compound Intrest*//
+
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        double p,t,r,si,ci;
+        System.out.print("Enter Principal amount..:");
+        p=SC.nextDouble();
+        
+        System.out.print("Enter Time..:");
+        t=SC.nextDouble();
+        
+        System.out.print("Enter Intrest Rate..:");
+        r=SC.nextDouble();
+        
+        si=(p*t*r)/100;
+        System.out.println("Simple Intrest ..:"+si);
+        
+        ci=p*(Math.pow((1+r/100),t))-p;
+        System.out.println("Compound Intrest ..:"+ci);
+}
+}
+
+25)//*Write a java program to covert temperature farhenheit to celsius*//
+
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        double ci,f;
+        System.out.print("Enter Temperature in fahrenheit..:");
+        f=SC.nextDouble();
+        ci=(f-32)*5/9;
+        System.out.print("Celsius"+ci);
+}
+}   
+
+
+26)//*Write a java program to covert temperature celsius to farhenheit*//
+
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        double ci,f;
+        System.out.print("Enter Temperature in Celsius..:");
+        ci=SC.nextDouble();
+        f=(ci+9/5)+32;
+        System.out.print("fahrenheit"+f);
+}
+}
+
+27)//* Write a jave program to print employee details using scanner class*//
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String arge[])
+    {
+        int eno;
+        String ename;
+        double esal;
+        float epf;
+        char egrade;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter Eno..:");
+        eno=SC.nextInt();
+        
+        System.out.print("Enter Ename..:");
+        ename=SC.next();
+        
+        System.out.print("Enter Esalary..:");
+        esal=SC.nextDouble();
+        
+        System.out.print("Enter Epf..:");
+        epf=SC.nextFloat();
+        
+        System.out.print("Enter Egrade..:");
+        egrade=SC.next().charAt(0);
+        
+        System.out.println("=====================================================");
+        System.out.println("\tEmployee Details");
+        System.out.println("=====================================================");
+        System.out.println("Eno     "+eno);
+        System.out.println("Ename   "+ename);
+        System.out.println("Esalary "+esal);
+        System.out.println("Epf     "+epf);
+        System.out.println("Egrade  "+egrade);
+        System.out.println("=====================================================");
+    }
+}
+
+28)//* Write a jave program to print employee details using scanner class*//
+
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+        float av;
+        String sname,ssec;
+        System.out.print("Enter Sno..:");
+        sno=SC.nextInt();
+ 
+        System.out.print("Enter Sname..:");
+        sname=SC.next();
+ 
+        System.out.print("Enter Sclass..:");
+        sclass=SC.nextInt();
+ 
+        System.out.print("Enter Ssec..:");
+        ssec=SC.next();
+ 
+        System.out.print("Enter m1..:");
+        m1=SC.nextInt();
+ 
+        System.out.print("Enter m2..:");
+        m2=SC.nextInt();
+ 
+        System.out.print("Enter m3..:");
+        m3=SC.nextInt();
+ 
+        System.out.print("Enter m4..:");
+        m4=SC.nextInt();
+ 
+        System.out.print("Enter m5..:");
+        m5=SC.nextInt();
+ 
+        System.out.print("Enter m6..:");
+        m6=SC.nextInt();
+ 
+        tot=m1+m2+m3+m4+m5+m6;
+        av=tot/6;
+ 
+        System.out.println("--------------------------------------------------------");
+        System.out.println("\t\tSTUDENT MARKS DETAILS");
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Sno = "+sno+"\t"+"Sname = "+sname);
+        System.out.println("Sclass = "+sclass+"\t"+"Ssec = "+ssec);
+        System.out.println("m1 = "+m1+"\t\t"+"m2 = "+m2+"\t\t"+"m3 = "+m3);
+        System.out.println("m4 = "+m4+"\t\t"+"m5 = "+m5+"\t\t"+"m6 = "+m6);
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Total Marks = "+tot);
+        System.out.println("Average = "+av);
+        System.out.println("--------------------------------------------------------");
+}
+}
+
+
+Conditional Statements...............................................................................................................................................................
+
+
+29) //*Write a java program to print the biggest number amoung two numbers using if condition*// 
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String arge[])
+    {
+        int a,b;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter A value..:");
+        a=SC.nextInt();
+        System.out.print("Enter B value..:");
+        b=SC.nextInt();
+        if(a>b)
+        {
+            System.out.print("A is Big");
+        }
+    }
+}
+
+30) //*Write a java program to print the biggest number amoung two numbers using if else condition*// 
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String arge[])
+    {
+        int a,b;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter A value..:");
+        a=SC.nextInt();
+        System.out.print("Enter B value..:");
+        b=SC.nextInt();
+        if(a>b)
+        {
+            System.out.print("A is Big");
+        }
+        else
+        {
+            System.out.print("B is Big");
+        }
+    }
+}
+
+31) //*Write a java program to print the biggest number amoung two numbers using else if condition*// 
+
+import java.util.*;
+import java.lang.*;
+class Main
+{
+    public static void main(String arge[])
+    {
+        int a,b;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter A value..:");
+        a=SC.nextInt();
+        System.out.print("Enter B value..:");
+        b=SC.nextInt();
+        if(a>b)
+        {
+            System.out.print("A is Big");
+        }
+        else if(a<b)
+        {
+            System.out.print("B is Big");
+        }
+    }
+}
+
+32) //*Write a java program to print the biggest number amoung two numbers or both are equal using else if*//
+
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a,b;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter A  value..:");
+    a=SC.nextInt();
+    System.out.print("Enter B value..:");
+    b=SC.nextInt();
+    if(a>b)
+    {
+        System.out.print("A is big");
+    }
+    else if(a<b)
+    {
+        System.out.print("B is big");
+    }
+    else if(a==b)
+    {
+        System.out.print("Both are equal");
+    }
+    }
+}
+
+
+33) //*Write a java program to check the given number is zero or positve or negitive number using nested if*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int x;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter X value..:");
+    x=SC.nextInt();
+    if(x>=0)
+    if(x==0)
+    {
+        System.out.print("Zero");
+    }
+    else
+    {
+        System.out.print("Positive");
+    }
+    else
+    {
+      System.out.print("Negitive");  
+    }
+    }
+}
+
+
+34) //*Write a java program to print the biggest number amoung two numbers using conditional operator or terenary operator*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a,b,t;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter A value..:");
+    a=SC.nextInt();
+    System.out.print("Enter B value..:");
+    b=SC.nextInt();
+    t=(a>b)?a:b;
+    System.out.print(t+" is Big");
+    }
+}
+
+
+35) //*Write a java program to print the biggest number amoung three numbers*// 
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a,b,c;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter A value..:");
+    a=SC.nextInt();
+    System.out.print("Enter B value..:");
+    b=SC.nextInt();
+    System.out.print("Enter C value..:");
+    c=SC.nextInt();
+    if(a>b && a>c)
+    {
+        System.out.print("A is big");
+    }
+    else if(b>a && b>c)
+    {
+        System.out.print("B is big");
+    }
+    else
+    {
+      System.out.print("C is big");  
+    }
+    }
+}
+
+36) //*Write a java program to print the given year is Leap year or not*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int year;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter Year..:");
+    year=SC.nextInt();
+    if(year%400==0 && year%100!=0 || year%4==0)
+    {
+    System.out.print("Leap year");
+    }
+    else
+    {
+        System.out.print("Not a Leap year");
+    }
+    }
+}
+
+37)//* Write a java program to print the given number is even or odd*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int n;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter N value..:");
+    n=SC.nextInt();
+    if(n%2==0)
+    {
+    System.out.print("Even Number");
+    }
+    else
+    {
+        System.out.print("Odd Number");
+    }
+    }
+}
+
+38)//* Write a java program to print eligibility for vote*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int age;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter your age..:");
+    age=SC.nextInt();
+    if(age>65)
+    {
+    System.out.println("Senior Citizen");
+    System.out.println("Eligible for vote");
+    }
+    else if(age<65 && age>=18)
+    {
+        System.out.println("Major Citizen");
+        System.out.println("Eligible for vote");
+    }
+    else if(age<18)
+    {
+        System.out.println("Minor Citizen");
+        System.out.println("Not Eligible for vote");
+    }
+    }
+}
+
+39)//* Write a java program to print Student marks report*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner SC=new Scanner(System.in);
+        int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+        float av;
+        String sname,ssec;
+        System.out.print("Enter Sno..:");
+        sno=SC.nextInt();
+ 
+        System.out.print("Enter Sname..:");
+        sname=SC.next();
+ 
+        System.out.print("Enter Sclass..:");
+        sclass=SC.nextInt();
+ 
+        System.out.print("Enter Ssec..:");
+        ssec=SC.next();
+ 
+        System.out.print("Enter m1..:");
+        m1=SC.nextInt();
+ 
+        System.out.print("Enter m2..:");
+        m2=SC.nextInt();
+ 
+        System.out.print("Enter m3..:");
+        m3=SC.nextInt();
+ 
+        System.out.print("Enter m4..:");
+        m4=SC.nextInt();
+ 
+        System.out.print("Enter m5..:");
+        m5=SC.nextInt();
+ 
+        System.out.print("Enter m6..:");
+        m6=SC.nextInt();
+ 
+        tot=m1+m2+m3+m4+m5+m6;
+        av=tot/6;
+ 
+        System.out.println("--------------------------------------------------------");
+        System.out.println("\t\tSTUDENT MARKS DETAILS");
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Sno = "+sno+"\t"+"Sname = "+sname);
+        System.out.println("Sclass = "+sclass+"\t"+"Ssec = "+ssec);
+        System.out.println("m1 = "+m1+"\t\t"+"m2 = "+m2+"\t\t"+"m3 = "+m3);
+        System.out.println("m4 = "+m4+"\t\t"+"m5 = "+m5+"\t\t"+"m6 = "+m6);
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Total Marks = "+tot);
+        System.out.println("Average = "+av);
+        System.out.println("--------------------------------------------------------");
+        if(m1<35 || m2<35 || m3<35 || m4<35 || m5<35 || m6<35)
+        {
+            System.out.println("Result = Fail");
+            System.out.println("Grade = **********");
+        }
+        else if(av>=65)
+        {
+            System.out.println("Result = Pass");
+            System.out.println("Grade = A");
+        }
+        else if(av<65 && av>=45)
+        {
+            System.out.println("Result = Pass");
+            System.out.println("Grade = B");
+        }
+        else if(av<45 && av>=35)
+        {
+            System.out.println("Result = Pass");
+            System.out.println("Grade = B");
+        }
+}
+}
+
+Switch Case........................................................................................................................................................................
+
+40)//*Switch case initialization*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=3;
+        System.out.println("--------------------------------------------------");
+        System.out.println("\t\tMenu");
+        System.out.println("--------------------------------------------------");
+        System.out.println("1.Chicken Biryani");
+        System.out.println("2.Mutton Biryani");
+        System.out.println("3.Veg Biryani");
+        System.out.println("--------------------------------------------------");
+        switch(i)
+        {
+            case 1:
+                System.out.println("You Selected Chicken Biryani");
+                break;
+            case 2:
+                System.out.println("You Selected Mutton Biryani");
+                break;
+            case 3:
+                System.out.println("You Selected Veg Biryani");
+                break;
+            default:
+            System.out.println("Invalid Item");
+            
+        }
+    }
+}
+
+41)//*Switch Case take input using keyboard*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i;
+        System.out.println("--------------------------------------------------");
+        System.out.println("\t\tMenu");
+        System.out.println("--------------------------------------------------");
+        System.out.println("1.Chicken Biryani");
+        System.out.println("2.Mutton Biryani");
+        System.out.println("3.Veg Biryani");
+        System.out.println("--------------------------------------------------");
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Select Your Option..:");
+        i=SC.nextInt();
+        switch(i)
+        {
+            case 1:
+                System.out.println("You Selected Chicken Biryani");
+                break;
+            case 2:
+                System.out.println("You Selected Mutton Biryani");
+                break;
+            case 3:
+                System.out.println("You Selected Veg Biryani");
+                break;
+            default:
+            System.out.println("Invalid Item");
+            
+        }
+    }
+}
+
+Math Function.......................................................................................................................................................................
+
+42) //*Write a java program for math functions*//
+
+import java.lang.*;
+import java.math.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+            System.out.println("Absolute value = "+Math.abs(-100));
+            System.out.println("Power = "+Math.pow(2,3));
+            System.out.println("PI = "+Math.PI);
+            System.out.println("Round = "+Math.round(343453.3404));
+            System.out.println("Ceil = "+Math.ceil(343.34));
+            System.out.println("Floor = "+Math.floor(343.34));
+            System.out.println("TAN = "+Math.tan(30));
+            System.out.println("SIN = "+Math.sin(60));
+            System.out.println("COS = "+Math.cos(89));
+            System.out.println("SQRt = "+Math.sqrt(4));
+        }
+        
+}
+
+While Loop............................................................................................................................................................................
+
+43) //* Write a java program to print nipuna 5 times*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        System.out.println("Nipuna");
+        System.out.println("Nipuna");
+        System.out.println("Nipuna");
+        System.out.println("Nipuna");
+        System.out.println("Nipuna");
+    }
+}
+
+
+44) //* Write a java program to print nipuna 5 times Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=5)
+        {
+        System.out.println("Nipuna");
+        i=i+1;
+        }
+    }
+}
+
+45) //* Write a java program to print 1 to 5 numbers Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=5)
+        {
+        System.out.println(i);
+        i=i+1;
+        }
+    }
+}
+
+46) //* Write a java program to print 1 to 5 numbers in single line Using While loop*//
+
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=5)
+        {
+        System.out.print("\t"+i);
+        i=i+1;
+        }
+    }
+}
+
+
+47) //* Write a java program to print 1 to 5 numbers in single line in Reverse order Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=5;
+        while(i>=1)
+        {
+        System.out.print("\t"+i);
+        i=i-1;
+        }
+    }
+}
+
+
+
+48) //* Write a java program to print 1 to 5 numbers and count,sum and Average Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1,c=0,s=0;
+       float av;
+        while(i<=5)
+        {
+        System.out.print("\t"+i);
+        c=c+1;
+        s=s+i;
+        i=i+1;
+        }
+        av=s/5;
+        System.out.println("\n");
+        System.out.println("count="+c);
+        System.out.println("sum="+s);
+        System.out.println("Average="+av);
+    }
+}
+
+
+49) //* Write a java program to print Even numbers between 1 to 10 Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=10)
+        {
+            if(i%2==0)
+            {
+                System.out.print("\t"+i);
+            }
+            i=i+1;
+        }
+        
+    }
+}
+
+
+50) //* Write a java program to print Odd numbers between 1 to 10 Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=10)
+        {
+            if(i%2!=0)
+            {
+                System.out.print("\t"+i);
+            }
+            i=i+1;
+        }
+        
+    }
+}
+
+51) //* Write a java program if value is odd number then print "Nipuna" otherwise print "Vijayawada"Using While loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=10)
+        {
+            if(i%2!=0)
+            {
+                System.out.println(i+" Nipuna");
+            }
+            else
+            {
+                System.out.println(i+" Vijayawada");
+            }
+
+            i=i+1;
+        }
+        
+    }
+}
+
+
+
+53)//*Write a java program for Fizz Buzz Logic*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       int i=1;
+        while(i<=16)
+        {
+            if(i%15==0)
+            {
+                System.out.println("Fizz Buzz");
+            }
+            else if(i%3==0)
+            {
+                System.out.println("Fizz");
+            }
+            else if(i%5==0)
+            {
+                System.out.println("Buzz");
+            }
+            else
+            {
+                System.out.println(i);
+            }
+
+            i=i+1;
+        }
+        
+    }
+}
+
+54)//*99 bottle of bear song lyrics*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=99;
+        String word="bottles";
+        while(i>=2)
+        {
+            System.out.println(i+" bottles of beer on the wall,"+i+" bottles of beer.");
+            i=i-1;
+            System.out.println("Take one down and pass it around,"+i+"bottles of beer on the wall.\n");
+        }
+        if(i==1)
+        {
+            System.out.println("1 bottle of beer on the wall, 1 bottle of beer.");
+                System.out.println("Take one down and pass it around, no more bottles of beer on the wall.\n");
+                System.out.println("No more bottles of beer on the wall, no more bottles of beer.");
+                System.out.println("Go to the store and buy some more, 99 bottles of beer on the wall.");
+        }
+    }
+}
+
+
+55)//*Write a java program to print n number of values using while loop*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1,n;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N value..:");
+        n=SC.nextInt();
+        while(i<=n)
+        {
+            System.out.print(i+"\t");
+            i=i+1;
+        }
+        
+    }
+}
+
+56) //*Write a java program to print a number & Square & Cube values of the given range*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1,n;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N value..:");
+        n=SC.nextInt();
+        while(i<=n)
+        {
+            System.out.print("Number\tSquare\tCube");
+            System.out.println();
+            System.out.print(i+"\t"+i*i+"\t"+i*i*i);
+            System.out.println();
+            i=i+1;
+        }
+        
+    }
+}
+
+
+57)//*Write a java program to print table multiplication*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1,n;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N value..:");
+        n=SC.nextInt();
+        while(i<=10)
+        {
+            System.out.println(n+"*"+i+"="+n*i);
+            System.out.println();
+            i=i+1;
+        }
+        
+    }
+}
+
+
+58)//*Write a java program to print the count of the given value*//
+
+
+import java.lang.*;
+import java.util.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+            int i=1,n,c=0;
+            Scanner SC=new Scanner(System.in);
+            System.out.print("Enter N value..:");
+            n=SC.nextInt();
+            while(i<=n)
+            {
+                n=n/10;
+                c=c+1;
+            }
+            System.out.print("count of digits = "+c);
+        }
+    }
+59)//*Write a java program to print the sum of digits*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+    {
+        public static void main(String args[])
+        {
+            int i=1,n,s=0,r;
+            Scanner SC=new Scanner(System.in);
+            System.out.print("Enter N value..:");
+            n=SC.nextInt();
+            while(i<=n)
+            {
+                r=n%10;
+                s=s+r;
+                n=n/10;
+            }
+            System.out.print("Sum of digits = "+s);
+        }
+    }
+
+
+60) //*Write a java program to print the given number is armstrong or not*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i=1,n,s=0,r,t;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter N value..:");
+    n=SC.nextInt();
+    t=n;
+    while(i<=n)
+    {
+        r=n%10;
+        s=s+r*r*r;
+        n=n/10;
+    }
+    if(t==s)
+    {
+        System.out.print("Armstrong");
+    }
+    else
+    {
+        System.out.print("Not Armstrong");
+    }
+    }
+}
+
+
+61) //*Write a java program to reverse the given number*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int n,r=0,t;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter N value..:");
+    n=SC.nextInt();
+    while(n!=0)
+    {
+        t=n%10;
+        r=r*10+t;
+        n=n/10;
+    }
+    System.out.print("Reverse = "+r);
+    }
+    }
+
+
+62) //* Write a java program to print the given number is palindrome or not*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int n,r,t,s=0;
+    Scanner SC=new Scanner(System.in);
+    System.out.print("Enter N value..:");
+    n=SC.nextInt();
+    t=n;
+    while(n>0)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    if(t==s)
+    {
+    System.out.print("Palindrome Number");
+    }
+    else
+    {
+        System.out.print("Not Palindrome Number");
+    }
+    }
+}
+
+63)//* Write a java program for nested while loop*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1;
+        while(i<=5)
+        {
+            int j=1;
+            while(j<=5)
+            {
+                System.out.print(i+"\t");
+                j=j+1;
+            }
+            System.out.println();
+            i=i+1;
+            }
+        }
+        
+    }
+
+Do While Loop.........................................................................................................................................................................
+
+64)//*Write a java program to print 1 to 10 numbers using do while loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1;
+        do
+        {
+            System.out.print(i+"\t");
+            i=i+1;
+        }while(i<=10);
+    }
+}
+
+65) //*Write a java program to add sum of to numbers and print you want to continue or not using do while loop*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a,b,c;
+        Scanner SC=new Scanner(System.in);
+        char ch;
+        do
+        {
+            System.out.print("Enter A value...: ");
+            a=SC.nextInt();
+            
+            System.out.print("Enter B value...: ");
+            b=SC.nextInt();
+            
+            c=a+b;
+            System.out.println("Sum is...: "+c);
+            System.out.print("Do you want to continue Y/N...: ");
+            ch=SC.next().charAt(0);
+        }while(ch=='Y' || ch=='y');
+    }
+}
+
+
+For Loop................................................................................................................................................................................
+
+66) //*Write a java program to print 1 to 10 numbers using for loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1;
+        for(i=1;i<=10;i++)
+        {
+            System.out.print(i+"\t");
+        }
+    }
+}
+
+67) //*Write a java program to print 1 to 10 numbers in reverse order using for loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1;
+        for(i=10;i>=1;i--)
+        {
+            System.out.print(i+"\t");
+        }
+    }
+}
+
+68) //*Write a java program to print 1 to 10 numbers and add sum,count and average using for loop*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1,n,s=0,c=0;
+        float av=0;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N value...: ");
+        n=SC.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            System.out.print(i+"\t");
+            c=c+1;
+            s=s+i;
+        }
+        av=s/n;
+        System.out.println();
+        System.out.println("Count is ..... :"+c);
+        System.out.println("Sum is ..... :"+s);
+        System.out.println("Average is ..... :"+av);
+    }
+}
+
+69) //*Write a java program to print 1 to 10 numbers and add even and odd sum,count and average using for loop*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i=1,n,s=0,c=0,se=0,ce=0,so=0,co=0;
+        float av=0,ave=0,avo=0;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N value...: ");
+        n=SC.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            System.out.print(i+"\t");
+            c=c+1;
+            s=s+i;
+            if(i%2==0)
+            {
+                ce=ce+1;
+                se=se+i;
+            }
+            else if(i%2!=0)
+            {
+                co=co+1;
+                so=so+i;
+            }
+        }
+        av=s/n;
+        ave=s/n;
+        avo=s/n;
+        System.out.println();
+        System.out.println("Count is ..... :"+c);
+        System.out.println("Sum is ..... :"+s);
+        System.out.println("Average is ..... :"+av);
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Count is ..... :"+ce);
+        System.out.println("Sum is ..... :"+se);
+        System.out.println("Average is ..... :"+ave);
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Count is ..... :"+co);
+        System.out.println("Sum is ..... :"+so);
+        System.out.println("Average is ..... :"+avo);
+    }
+}
+
+70) //* Write a java program to print factorial of a given number//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int n,f=1,i;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter N Value...: ");
+        n=SC.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+        System.out.print("Factorial... : "+f);
+        
+    }
+}
+
+71) //* Write a java program for fibinocis series*//
+
+import java .lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a=0,b=1,c,i;
+        for(i=0;i<10;i++)
+        {
+            System.out.print(a+"\t");
+            c=a+b;
+            a=b;
+            b=c;
+        }
+        
+        }
+        
+    }
+
+
+72) //*Write a java program for break statement*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i;
+        for(i=1;i<=10;i++)
+        {
+            if(i>5)
+            break;
+            System.out.print(i+"\t");
+        }
+    }
+}
+
+73) //*Write a java program cor continue statement*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        if(i%2==0)
+        continue;
+        System.out.print(i+"\t");
+    }
+    }
+}
+
+74) //*Write  a java program to print in * pattern*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        System.out.print("*");
+        System.out.println();
+    }
+    }
+}
+
+75) //*Write a java program to print number pattern*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        System.out.print(i);
+        System.out.println();
+    }
+    }
+}
+
+76) //*Write a java program to print Alphabets in Patterns*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    char i,j;
+    for(i='A';i<='E';i++)
+    {
+        for(j='A';j<='E';j++)
+        System.out.print(i);
+        System.out.println();
+    }
+    }
+}
+
+77)//* Write a javaprogram to print some numbers using break statement*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i;
+    for(i=1;i<=20;i++)
+    {
+        if(i>15)
+        break;
+        System.out.print(i+"\t");
+    }
+    }
+}
+
+78) //*Wtrie a java program for continue statement*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int i;
+    for(i=1;i<=20;i++)
+    {
+        if(i%2==0)
+        continue;
+        System.out.print(i+"\t");
+    }
+    }
+}
+
+79) //*Write a java program to print given number is even or odd using Lables*//
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String args[]) {
+        int i;
+        Scanner SC = new Scanner(System.in);
+        System.out.print("Enter i Value... : ");
+        i = SC.nextInt();
+        
+        if (i % 2 == 0) {
+            evenLabel();
+        } else {
+            oddLabel();
+        }
+    }
+    
+    public static void evenLabel() {
+        System.out.print("Even Number");
+    }
+    
+    public static void oddLabel() {
+        System.out.print("Odd Number");
+    }
+}
+
+Arrays...................................................................................................................................................................................
+
+80) //Write a java program to print one elements using array*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a[]={10,20,30,40,50};
+    System.out.print(a[2]);
+    }
+    
+}
+
+81) //*Write a java program to print all the array elements*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a[]={10,20,30,40,50};
+    System.out.print(a[0]+"\t"+a[1]+"\t"+a[2]+"\t"+a[3]+"\t"+a[4]);
+    }
+    
+}
+
+82) //*Write a java program to print all the array elements using for loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a[]={10,20,30,40,50};
+    int i;
+    for(i=0;i<5;i++)
+    {
+    System.out.print(a[i]+"\t");
+    }
+    }
+    
+}
+
+83) //*Write a java program to print all the array elements in reverse order using for loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+    int a[]={10,20,30,40,50};
+    int i;
+    for(i=4;i>=0;i--)
+    {
+    System.out.print(a[i]+"\t");
+    }
+    }
+    
+}
+
+84) //*Write a java program to print array elements using for each loop*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[]={10,20,30,40,50};
+        for(int x:a)
+        {
+            System.out.print(x+"\t");
+        }
+    }
+}
+
+85) //*Write a java program to create array in object and access element*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[];
+        a=new int[5];
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        a[4]=50;
+        System.out.print(a[2]);
+    }
+}
+
+86) //*Write a java program to create array in object and access all the elements*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i,a[];
+        a=new int[5];
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        a[4]=50;
+        for(i=0;i<5;i++)
+        {
+        System.out.print(a[i]+"\t");
+    }
+    }
+}
+
+
+87) //*Write a java program to create array in object and access all the elements and perform SUM and Average*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int i,s=0;
+        int a[]=new int[5];
+        double av;
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        a[4]=50;
+        for(i=0;i<5;i++)
+        {
+        System.out.print(a[i]+"\t");
+        s=s+a[i];
+        }
+        av=s/5;
+        System.out.println();
+        System.out.println("Sum is... : "+s);
+        System.out.println("Average is... : "+av);
+    }
+}
+
+88) //*Write a java program to create array in object and access all the elements and Min and Max value*//
+
+import java.lang.*;
+
+class Main {
+    public static void main(String args[])
+    {
+        int i;
+        int a[]=new int[5];
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        a[4]=50;
+        int max=a[0];
+        int min=a[0];
+        
+        for (i=0;i<5;i++)
+        {
+            System.out.print(a[i]+"\t");
+            if (a[i]>max)
+            {
+                max=a[i];
+            } 
+            else if(a[i]<min)
+            {
+                min=a[i];
+            }
+        }
+        
+        System.out.println();
+        System.out.println("Max is... : "+max);
+        System.out.println("Min is... : "+min);
+    }
+}
+
+89) //*Write a java program to print array elements and take input with keyboard*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[]=new int[100],n,i;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter Size of an array... : ");
+        n=SC.nextInt();
+        System.out.println("Enter Array Elements... :");
+        for(i=0;i<n;i++)
+        {
+            a[i]=SC.nextInt();
+        }
+        System.out.print("Entered Elements are... :");
+        for(i=0;i<n;i++)
+        {
+            System.out.print(a[i]+"\t");
+        }
+    }
+}
+
+
+90) //*Write a java program to print array elements and calculate Sum,Count and average  take input with keyboard*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[]=new int[100],n,i,s=0,c=0;
+        double av;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter Size of an array... : ");
+        n=SC.nextInt();
+        System.out.println("Enter Array Elements... :");
+        for(i=0;i<n;i++)
+        {
+            a[i]=SC.nextInt();
+        }
+        System.out.println("Entered Elements are... :");
+        for(i=0;i<n;i++)
+        {
+            System.out.print(a[i]+"\t");
+            c=c+1;
+            s=s+a[i];
+        }
+        av=s/n;
+        System.out.println();
+        System.out.println("SUM is... :"+s);
+        System.out.println("COUNT is... :"+c);
+        System.out.println("Average is... :"+av);
+    }
+}
+
+91) //*Write a java program to print a max and min array elements take input with keyboard*//
+
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[]=new int[100],n,i;
+        Scanner SC=new Scanner(System.in);
+        System.out.print("Enter Size of an array... : ");
+        n=SC.nextInt();
+        System.out.println("Enter Array Elements... :");
+        for(i=0;i<n;i++)
+        {
+            a[i]=SC.nextInt();
+        }
+        int max=a[0],min=a[0];
+        System.out.println("Entered Elements are... :");
+        for (i=0;i<n;i++)
+        {
+            System.out.print(a[i]+"\t");
+            if (a[i]>max)
+            {
+                max=a[i];
+            } 
+            else if(a[i]<min)
+            {
+                min=a[i];
+            }
+        }
+        
+        System.out.println();
+        System.out.println("Max is... : "+max);
+        System.out.println("Min is... : "+min);
+    }
+}
+
+
+92) //*Write a java program to print the elements in double dimensional array*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[][]={{10,20,30},{40,50,60},{70,80,90}};
+        int i,j;
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            System.out.print("\t"+a[i][j]);
+            System.out.println();
+        }
+    }
+}
+
+93) //*Write a java program to create array as object and print the elements in double dimensional array*//
+
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[3][3];
+        a[0][0]=10;
+        a[0][1]=20;
+        a[0][2]=30;
+        
+        a[1][0]=40;
+        a[1][1]=50;
+        a[1][2]=60;
+        
+        a[2][0]=70;
+        a[2][1]=80;
+        a[2][2]=90;
+        
+        int i,j;
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            System.out.print("\t"+a[i][j]);
+            System.out.println();
+        }
+    }
+}
+
+94) //*Write a java program to create array as object and print the elements in double dimensional array*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[100][100];
+        int r,c,i,j;
+        Scanner SC=new Scanner(System.in);
+        System.out.println("Enter number of rows...... :");
+        r=SC.nextInt();
+        System.out.println("Enter number of columns...... :");
+        c=SC.nextInt();
+        System.out.println("Enter Values...... :");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            a[i][j]=SC.nextInt();
+        }
+        System.out.println("Matrix is...... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+a[i][j]);
+            System.out.println();
+        }
+    }
+}
+
+95) //* Write a java program to print matrix addition*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[100][100];
+        int b[][]=new int[100][100];
+        int r,c,i,j;
+        Scanner SC=new Scanner(System.in);
+        System.out.println("Enter number of A rows...... :");
+        r=SC.nextInt();
+        System.out.println("Enter number of A columns...... :");
+        c=SC.nextInt();
+        System.out.println("Enter Values...... :");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            a[i][j]=SC.nextInt();
+        }
+        
+        System.out.println("Enter number of B rows...... :");
+        r=SC.nextInt();
+        System.out.println("Enter number of B columns...... :");
+        c=SC.nextInt();
+        System.out.println("Enter Values...... :");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            b[i][j]=SC.nextInt();
+        }
+        System.out.println("A Matrix is...... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+a[i][j]);
+            System.out.println();
+        }
+        
+        System.out.println("B Matrix is...... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+b[i][j]);
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println("A+B Matrix is... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+(a[i][j]+b[i][j]));
+            System.out.println();
+        }
+    }
+}
+
+95) //* Write a java program to print matrix multiplication*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[100][100];
+        int b[][]=new int[100][100];
+        int r,c,i,j;
+        Scanner SC=new Scanner(System.in);
+        System.out.println("Enter number of A rows...... :");
+        r=SC.nextInt();
+        System.out.println("Enter number of A columns...... :");
+        c=SC.nextInt();
+        System.out.println("Enter Values...... :");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            a[i][j]=SC.nextInt();
+        }
+        
+        System.out.println("Enter number of B rows...... :");
+        r=SC.nextInt();
+        System.out.println("Enter number of B columns...... :");
+        c=SC.nextInt();
+        System.out.println("Enter Values...... :");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            b[i][j]=SC.nextInt();
+        }
+        System.out.println("A Matrix is...... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+a[i][j]);
+            System.out.println();
+        }
+        
+        System.out.println("B Matrix is...... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+b[i][j]);
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println("A*B Matrix is... :");
+        System.out.println();
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            System.out.print("\t\t"+(a[i][j]*b[i][j]));
+            System.out.println();
+        }
+    }
+}
+
+
+Strings: as Variablesa and object................................................................................................................................................
+
+96) //* Write a java program to take string as variable*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        String x="State Bank Of India";
+        System.out.print(x);
+    }
+}
+
+97) //* Write a java program to take string as object*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        String x=new String("State Bank Of India");
+        System.out.print(x);
+    }
+}
+
+98) //*String operations*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        String x="Vijayawada";
+        String y="Nipuna";
+        System.out.println("Length of x = "+x.length());
+        System.out.println("Length of y = "+x.charAt(4));
+        System.out.println("Index ="+x.indexOf('a'));
+        System.out.println("Replace "+x.replace('a','x'));
+        System.out.println("Upper Case ="+x.toUpperCase());
+        System.out.println("Lower Case ="+x.toLowerCase());
+        System.out.println("SubString ="+x.substring(3,6));
+    }
+}
+
+99) //*String Buffer for reverse string*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        StringBuffer x=new StringBuffer("Vijayawada");
+        System.out.print(x.reverse());
+    }
+}
+
+100) //* String Builder for reverse string*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        StringBuilder x=new StringBuilder("Vijayawada");
+        System.out.print(x.reverse());
+    }
+}
+
+101) //*String Tokenizer*//
+
+import java.lang.*;
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        StringTokenizer x=new StringTokenizer("State Bank of India");
+        while(x.hasMoreTokens())
+        {
+            System.out.println(x.nextToken());
+        }
+    }
+}
+
+102) //*Object Oriented Programming single object*//
+
+class Bird
+{
+    void fly()
+    {
+        System.out.println("They fly to fulfil natural activites");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Bird parrot=new Bird();
+        parrot.fly();
+    }
+}
+
+103) //*Object Oriented Programming Multiple object*//
+
+class Bird
+{
+    void fly()
+    {
+        System.out.println("They fly to fulfil natural activites");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Bird parrot=new Bird();
+        parrot.fly();
+        System.out.println("--------------------------------");
+        Bird pegion=new Bird();
+        pegion.fly();
+    }
+}
+
+104) //*//*Object Oriented Programming mulitiple methods and Multiple object*//
+
+class Bird
+{
+    void fly()
+    {
+        System.out.println("They fly to fulfil natural activites");
+    }
+    void buildnest()
+    {
+        System.out.println("They build nest to live");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Bird parrot=new Bird();
+        parrot.fly();
+        System.out.println("--------------------------------");
+        Bird pegion=new Bird();
+        pegion.fly();
+        pegion.buildnest();
+    }
+}
+
+105) //*Write a java program to print sum of two numbers using method with return type*//
+
+import java.lang.*;
+class MyCalci
+{
+    int a;
+    int b;
+    int mySum()
+    {
+        return a+b;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci();
+        MC.a=10;
+        MC.b=20;
+        System.out.println("Value of A is... :"+MC.a);
+        System.out.println("Value of B is... :"+MC.b);
+        System.out.println("Value of A+B  is... :"+MC.mySum());
+    }
+}
+
+106) //* Area of a rectangle*//
+
+import java.lang.*;
+import java.util.*;
+class Area
+{
+    Scanner SC=new Scanner(System.in);
+    int length;
+    int breadth;
+    void getVals()
+    {
+        System.out.print("Enter length...:");
+        length=SC.nextInt();
+        System.out.print("Enter Breadth..:");
+        breadth=SC.nextInt();
+    }
+    void putVals()
+    {
+        System.out.println("Length of a rectangle is...: "+length);
+        System.out.println("Breadth of a rectangle is...: "+breadth);
+    }
+        int myArea()
+        {
+           return length*breadth;
+        }
+    }
+    class Main
+    {
+        public static void main(String args[])
+        {
+         Area A=new Area();
+         A.getVals();
+         A.putVals();
+         System.out.println("Area of a rectangle is = "+A.myArea());
+        }
+    }
+
+107) //*Area of a Circle*//
+
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+class AreaCircle
+{
+    Scanner SC=new Scanner(System.in);
+    double r,c,a;
+    void getVals()
+    {
+    System.out.print("Enter Radius..:");
+    r=SC.nextDouble();
+    }
+    void putVals()
+    {
+        System.out.print("Radius is...: "+r);
+    }
+    
+    double myCircumference()
+    {
+        return 2*Math.PI*r; 
+    }
+    double myAreaCircle()
+    {
+        return Math.PI*(r*r);
+    }
+}
+    class Main
+    {
+        public static void main(String args[])
+        {
+            AreaCircle AC=new AreaCircle();
+            AC.getVals();
+            AC.putVals();
+            System.out.println();
+            System.out.println("Circumferencs of a Circle..: "+AC.myCircumference());
+            System.out.println("Area of a Circle..: "+AC.myAreaCircle());
+        }
+    }
+
+108)//* Simple Intrest and compound intrest*//
+
+import java.lang.*;
+import java.util.*;
+class MyIntrest
+{
+  Scanner SC = new Scanner (System.in);
+  double p, t, r, si;
+  void getVals ()
+  {
+    System.out.print ("Enter Principal amount...:");
+    p = SC.nextDouble ();
+
+    System.out.print ("Enter Time..:");
+    t = SC.nextDouble ();
+
+    System.out.print ("Enter Intrest Rate..:");
+    r = SC.nextDouble ();
+  }
+  void putVals ()
+  {
+    System.out.println("Principal amount is...: "+ p);
+    System.out.println("Time is...: "+t);
+    System.out.println("Intrest Rate is...: "+r);
+  }
+  double mySimpleIntrest()
+  {
+      return (p*t*r)/100;
+  }
+  double myCompoundIntrest()
+  {
+      return p*(Math.pow((1+r/100),t))-p;
+  }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyIntrest MI=new MyIntrest();
+        MI.getVals();
+        System.out.println("-----------------------------------------------------");
+        MI.putVals();
+        System.out.println("-----------------------------------------------------");
+        System.out.println("Simple Intrest is..: "+MI.mySimpleIntrest());
+        System.out.println("Compound Intrest is..: "+MI.myCompoundIntrest());
+    }
+}
+
+109)//* Student Marks REport*//
+
+import java.lang.*;
+import java.util.*;
+class StudentMarksReport
+{
+  Scanner SC = new Scanner (System.in);
+  int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+  float av;
+  String sname,ssec;
+  void getVals()
+  {
+      System.out.print("Enter Student number...:");
+      sno=SC.nextInt();
+      
+      System.out.print("Enter Sname..:");
+      sname=SC.next();
+ 
+      System.out.print("Enter Sclass..:");
+      sclass=SC.nextInt();
+ 
+      System.out.print("Enter Ssec..:");
+      ssec=SC.next();
+ 
+      System.out.print("Enter m1..:");
+      m1=SC.nextInt();
+ 
+      System.out.print("Enter m2..:");
+      m2=SC.nextInt();
+ 
+      System.out.print("Enter m3..:");
+      m3=SC.nextInt();
+ 
+      System.out.print("Enter m4..:");
+      m4=SC.nextInt();
+ 
+      System.out.print("Enter m5..:");
+      m5=SC.nextInt();
+ 
+      System.out.print("Enter m6..:");
+      m6=SC.nextInt();
+  }
+  
+  void putVals()
+  {
+        System.out.println("--------------------------------------------------------");
+        System.out.println("\t\tSTUDENT MARKS DETAILS");
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Sno = "+sno+"\t"+"Sname = "+sname);
+        System.out.println("Sclass = "+sclass+"\t"+"Ssec = "+ssec);
+        System.out.println("m1 = "+m1+"\t\t"+"m2 = "+m2+"\t\t"+"m3 = "+m3);
+        System.out.println("m4 = "+m4+"\t\t"+"m5 = "+m5+"\t\t"+"m6 = "+m6);
+        System.out.println("--------------------------------------------------------");
+  }
+  
+  int myTotal()
+  {
+      return m1+m2+m3+m4+m5+m6;
+  }
+  
+  float myAverage()
+  {
+      return tot/6;
+  }
+  
+}
+  class Main
+      {
+              public static void main(String args[])
+              {
+          StudentMarksReport MR=new StudentMarksReport();
+          MR.getVals();
+          MR.putVals();
+          System.out.println("Total Marks....: "+MR.myTotal());
+          System.out.println("Average Marks....: "+MR.myAverage());
+      }
+      }
+          
+110)//*Employee Details*//
+
+import java.lang.*;
+import java.util.*;
+class EmployeeDetails
+{
+  Scanner SC = new Scanner (System.in);
+    int eno;
+    String ename;
+    double esal;
+    float epf;
+    char egrade;
+  void getVals()
+  {
+    System.out.print("Enter Eno..:");
+    eno=SC.nextInt();
+        
+    System.out.print("Enter Ename..:");
+    ename=SC.next();
+        
+    System.out.print("Enter Esalary..:");
+    esal=SC.nextDouble();
+        
+    System.out.print("Enter Epf..:");
+    epf=SC.nextFloat();
+        
+    System.out.print("Enter Egrade..:");
+    egrade=SC.next().charAt(0);
+  }
+  
+  void putVals()
+  {
+        System.out.println("=====================================================");
+        System.out.println("\tEmployee Details");
+        System.out.println("=====================================================");
+        System.out.println("Eno     "+eno);
+        System.out.println("Ename   "+ename);
+        System.out.println("Esalary "+esal);
+        System.out.println("Epf     "+epf);
+        System.out.println("Egrade  "+egrade);
+        System.out.println("=====================================================");
+  }
+  
+  
+}
+  class Main
+      {
+              public static void main(String args[])
+              {
+          EmployeeDetails ED=new EmployeeDetails();
+          ED.getVals();
+          ED.putVals();
+      }
+      }
+          
+  
+
+111) //*Convert Temperature in Fahrenheit to celcius*//
+import java.lang.*;
+import java.util.*;
+class TemperatureDetails
+{
+  Scanner SC = new Scanner (System.in);
+  double ci,f;
+  void getVals()
+  {
+      System.out.print("Enter Temperature in Fahrenheit..... : ");
+      f=SC.nextDouble();
+  }
+  int putVals()
+  {
+      System.out.println("Temperature you entered in Fahrenheit..... : "+f);
+  }
+  int Celcius()
+  {
+      return (f-32)*5/9;
+  }
+  
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        TemperatureDetails TD=new TemperatureDetails();
+        TD.getVals();
+        TD.putVals();
+        System.out.println("Temperature in Celcius..... :"+TD.Celcius());
+    }
+}
+ 
+112) //*Write a java program to print IceCream details method with and whith out return type*//
+
+import java.lang.*;
+
+class IceCream
+{
+    int price;
+    int quantity;
+    double weight;
+    String color;
+
+    void melt()
+    {
+        System.out.println("It melts at room temperature.");
+    }
+
+    int BillAmt()
+    {
+        return price * quantity;
+    }
+}
+
+class Main
+{
+    public static void main(String args[])
+    {
+        IceCream vanilla = new IceCream();
+        vanilla.price = 20;
+        vanilla.quantity = 100;
+        vanilla.weight = 45.5;
+        vanilla.color = "White";
+        System.out.println("Price of vanilla = " + vanilla.price);
+        System.out.println("Quantity of vanilla = " + vanilla.quantity);
+        System.out.println("Weight of vanilla = " + vanilla.weight);
+        System.out.println("Color of vanilla = " + vanilla.color);
+        System.out.println("Bill Amount = " + vanilla.BillAmt());
+        vanilla.melt();
+        System.out.println("------------------------------------------------------");
+        IceCream butterscotch = new IceCream();
+        butterscotch.price = 45;
+        butterscotch.quantity = 250;
+        butterscotch.weight = 25.5;
+        butterscotch.color = "pale yellow";
+        System.out.println("Price of butterscotch = " + butterscotch.price);
+        System.out.println("Quantity of butterscotch = " + butterscotch.quantity);
+        System.out.println("Weight of butterscotch = " + butterscotch.weight);
+        System.out.println("Color of butterscotch = " + butterscotch.color);
+        System.out.println("Bill Amount = " + butterscotch.BillAmt());
+        butterscotch.melt();
+    }
+}
+
+113) //*//*Write a java program to print Arthimetic operations using method with return type*//
+
+import java.lang.*;
+import java.util.*;
+class MyCalci
+{
+    Scanner SC=new Scanner(System.in);
+    int a;
+    int b;
+    void getVals()
+    {
+        System.out.print("Enter A... :");
+        a=SC.nextInt();
+        System.out.print("Enter B... :");
+        b=SC.nextInt();
+    }
+    void putVals()
+    {
+        System.out.println("Value of A is... :"+a);
+        System.out.println("Value of B is... :"+b);
+    }
+    int mySum()
+    {
+        return a+b;
+    }
+    int mySub()
+    {
+        return a-b;
+    }
+    int myMul()
+    {
+        return a*b;
+    }
+    int myDiv()
+    {
+        return a/b;
+    }
+    int myMod()
+    {
+        return a%b;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci();
+        MC.getVals();
+        MC.putVals();
+        System.out.println("Sum = "+MC.mySum());
+        System.out.println("Sub = "+MC.mySub());
+        System.out.println("Mul = "+MC.myMul());
+        System.out.println("Div = "+MC.myDiv());
+        System.out.println("Mod = "+MC.myMod());
+    }
+}
+
+114) //*Write a java program to perform Arthimetic operations using Switch Case*//
+
+import java.lang.*;
+import java.util.*;
+class MyCalci
+{
+    Scanner SC=new Scanner(System.in);
+    int a;
+    int b;
+    void getVals()
+    {
+        System.out.print("Enter A... :");
+        a=SC.nextInt();
+        System.out.print("Enter B... :");
+        b=SC.nextInt();
+    }
+    void putVals()
+    {
+        System.out.println("Value of A is... :"+a);
+        System.out.println("Value of B is... :"+b);
+    }
+    int mySum()
+    {
+        return a+b;
+    }
+    int mySub()
+    {
+        return a-b;
+    }
+    int myMul()
+    {
+        return a*b;
+    }
+    int myDiv()
+    {
+        return a/b;
+    }
+    int myMod()
+    {
+        return a%b;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci();
+        int i;
+        Scanner SC=new Scanner(System.in);
+        System.out.println("==============================================================");
+        System.out.println("\tMENU");
+        System.out.println("==============================================================");
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+        System.out.println("5.Modlus");
+        System.out.println("==============================================================");
+        System.out.println("Enter your choice");
+        i=SC.nextInt();
+        MC.getVals();
+        MC.putVals();
+        
+        switch(i)
+        {
+            case 1:
+                 System.out.println("Sum = "+MC.mySum());
+                 break;
+            case 2:
+                System.out.println("Sub = "+MC.mySub());
+                break;
+            case 3:
+                System.out.println("Mul = "+MC.myMul());
+                break;
+            case 4:
+                System.out.println("Div = "+MC.myDiv());
+                break;
+            case 5:
+                System.out.println("Mod = "+MC.myMod());
+                break;
+            default:
+            System.out.println("Invalid");
+        }
+    }
+}
+
+Constructor--------------------------------------------------------------------------------
+
+115) //Write a java program for default constructor*//
+
+import java.lang.*;
+class MyCalci
+{
+    int x;
+    int y;
+    MyCalci()
+    {
+        x=5;
+        y=3;
+    }
+    void dispvals()
+    {
+        System.out.println("Value of X is... :"+x);
+        System.out.println("Value of Y is... :"+y);
+    }
+    int mySum()
+    {
+        return x+y;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci();
+        MC.dispvals();
+        System.out.println("Sum is... :"+MC.mySum());
+    }
+}
+
+116) //Write a java program for Parameterized constructor*//
+
+import java.lang.*;
+class MyCalci
+{
+    int x;
+    int y;
+    MyCalci(int a,int b)
+    {
+        x=a;
+        y=b;
+    }
+    void dispvals()
+    {
+        System.out.println("Value of X is... :"+x);
+        System.out.println("Value of Y is... :"+y);
+    }
+    int mySum()
+    {
+        return x+y;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci(20,10);
+        MC.dispvals();
+        System.out.println("Sum is... :"+MC.mySum());
+    }
+}
+
+117) //*Write a java program for constructor when the variables and constructor name are same*//
+
+
+import java.lang.*;
+class MyCalci
+{
+    int x;
+    int y;
+    MyCalci(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    void dispvals()
+    {
+        System.out.println("Value of X is... :"+x);
+        System.out.println("Value of Y is... :"+y);
+    }
+    int mySum()
+    {
+        return x+y;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci(20,10);
+        MC.dispvals();
+        System.out.println("Sum is... :"+MC.mySum());
+    }
+}
+
+118) //* Write a java program for constructor overloading*//
+
+import java.lang.*;
+class MyCalci
+{
+    int a;
+    int b;
+    int c;
+    MyCalci()
+    {
+        a=1;
+        b=2;
+        c=3;
+    }
+    int mySumOne()
+    {
+        return a+b+c; 
+    }
+    MyCalci(int x,int y)
+    {
+    a=x;
+    b=y;
+    }
+    int mySumTwo()
+    {
+        return a+b;
+    }
+    MyCalci(int x,int y,int z)
+    {
+        a=x;
+        b=y;
+        c=z;
+    }
+    int mySumThree()
+    {
+        return a+b+c;
+    }
+}
+    class Main
+    {
+        public static void main(String args[])
+        {
+            MyCalci MC1=new MyCalci();
+            MyCalci MC2=new MyCalci(10,20);
+            MyCalci MC3=new MyCalci(5,7,9);
+            System.out.println("Sum is... :"+MC1.mySumOne());
+            System.out.println("Sum is... :"+MC2.mySumTwo());
+            System.out.println("Sum is... :"+MC3.mySumThree());
+        }
+    }
+
+119) //* Constructor over loading with different data types with different variables print Books Details*//
+
+import java.lang.*;
+class Books
+{
+  int bno;
+  String bname;
+  double bprice;
+    Books()
+  {
+    bno = 1;
+    bname = "Unix";
+    bprice = 456.75;
+  }
+  void bOneDet()
+  {
+    System.out.println("Bno =" + bno + "\t" + "Bname =" + bname + "\t" +"Bprice =" + bprice);
+  }
+  Books(int bn, String bna)
+  {
+    bno = bn;
+    bname = bna;
+  }
+  void bTwoDet ()
+  {
+    System.out.println("Bno =" + bno + "\t" + "Bname =" + bname);
+  }
+  Books(int bn,String bna,double bp)
+  {
+     bno = bn;
+    bname = bna;
+    bprice =bp;
+  }
+  void bThreeDet()
+  {
+    System.out.println("Bno =" + bno + "\t" + "Bname =" + bname + "\t" +"Bprice =" + bprice); 
+  }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Books B1=new Books();
+        Books B2=new Books(2,"Pyton");
+        Books B3=new Books(3,"C programming",255.45);
+        B1.bOneDet();
+        B2.bTwoDet();
+        B3.bThreeDet();
+    }
+}
+
+
+Static Variables and Static methods............................................................................................................................................
+
+120) //* Write a java program for Static Variable*//
+
+import java.lang.*;
+class Bird
+{
+    static int count=100;
+    int age;
+    int wings;
+    double weight;
+    String color;
+    static void sing()
+    {
+        System.out.println("Some birds can sing");
+    }
+    void fly()
+    {
+        System.out.println("They Fly");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        System.out.println("Count of Birds"+Bird.count);
+        Bird.sing();
+        Bird Pegion=new Bird();
+        Pegion.age=4;
+        Pegion.wings=2;
+        Pegion.weight=4.5;
+        Pegion.color="Grey";
+        System.out.println("Age ="+Pegion.age);
+        System.out.println("Wings ="+Pegion.wings);
+        System.out.println("Weight ="+Pegion.weight);
+        System.out.println("Color ="+Pegion.color);
+        Pegion.fly();
+    }
+}
+ 
+121) //*Write a java program for Single Inheritance*//
+
+import java.lang.*;
+class A
+{
+    void mofca()
+    {
+        System.out.println("I am method of parent class A");
+    }
+}
+class B extends A
+{
+    void mofcb()
+    {
+        System.out.println("I am method of child class B");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        B objB=new B();
+        objB.mofca();
+        objB.mofcb();
+    }
+}
+
+122) //*Write a java program for multi level inheritance*//
+
+import java.lang.*;
+class A
+{
+    void mofca()
+    {
+        System.out.println("I am method of parent class A");
+    }
+}
+class B extends A
+{
+    void mofcb()
+    {
+        System.out.println("I am method of child class B");
+    }
+}
+class C extends B
+{
+    void mofcc()
+    {
+        System.out.println("I am method of child class C");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        B objB=new B();
+        objB.mofca();
+        objB.mofcb();
+        System.out.println("-------------------------------------------------");
+        C objC=new C();
+        objC.mofca();
+        objC.mofcb();
+        objC.mofcc();
+        
+    }
+}
+
+123) //*Write a java program for Hirerichal inheritance*//
+
+import java.lang.*;
+class A
+{
+    void mofca()
+    {
+        System.out.println("I am method of parent class A");
+    }
+}
+class B extends A
+{
+    void mofcb()
+    {
+        System.out.println("I am method of child class B");
+    }
+}
+class C extends A
+{
+    void mofcc()
+    {
+        System.out.println("I am method of child class C");
+    }
+}
+class D extends A
+{
+    void mofcd()
+    {
+        System.out.println("I am method of child class D");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        B objB=new B();
+        objB.mofca();
+        objB.mofcb();
+        System.out.println("-------------------------------------------------");
+        C objC=new C();
+        objC.mofca();
+        objC.mofcc();
+        System.out.println("-------------------------------------------------");
+        D objD=new D();
+        objD.mofca();
+        objD.mofcd();
+        
+    }
+}
+
+124) // Write a java program for Interface to achive mulitple Inheritance*//
+
+import java.lang.*;
+interface A
+{
+    void greetOne();  //Abstract Method
+}
+interface B
+{
+    void greetTwo();  //Abstract Method
+}
+class C implements A,B
+{
+    public void greetOne()
+    {
+        System.out.println("Hai");
+    }
+    public void greetTwo()
+    {
+        System.out.println("How are you");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        C objC=new C();
+        objC.greetOne();
+        objC.greetTwo();
+    }
+}
+
+125) //*Method Overloading//
+
+import java.lang.*;
+class Person
+{
+    void walk()
+    {
+        System.out.println("Person Walks Slowly");
+    }
+}
+class Employee extends Person
+{
+    void walk()
+    {
+        System.out.println("Employee walks Speedily");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Employee E=new Employee();
+        E.walk();
+    }
+}
+
+126) //*Method Overloading*//
+
+import java.lang.*;
+class MyCalci
+{
+    int a;
+    int b;
+    int c;
+    int mySum()
+    {
+        return a+b+c;
+    }
+    int mySum(int x,int y)
+    {
+        a=x;
+        b=y;
+        return a+b;
+    }
+int mySum(int x,int y,int z)
+{
+    a=x;
+    b=y;
+    c=z;
+    return a+b+c;
+}
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyCalci MC=new MyCalci();
+        MC.a=10;
+        MC.b=20;
+        MC.c=30;
+        System.out.println("Sum is ="+MC.mySum());
+        System.out.println("Sum is ="+MC.mySum(3,2));
+        System.out.println("Sum is ="+MC.mySum(5,7,9));
+    }
+}
+
+127) //*Abstract Class And Abstract Method in java*//
+
+import java.lang.*;
+abstract class Bank   //Abstract Class
+{
+    abstract void irate();  //Abstract Method
+}
+class SBI extends Bank
+{
+    void irate()
+    {
+        System.out.println("Intrest rate of SBI is 6%");
+    }
+}
+class ICICI extends Bank
+{
+    void irate()
+    {
+        System.out.println("Intrest rate of ICICI is 7.5%");
+    }
+}
+class HDFC extends Bank
+{
+    void irate()
+    {
+        System.out.println("Intrest rate of HDFC is 8%");
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        SBI S=new SBI();
+        ICICI I=new ICICI();
+        HDFC H=new HDFC();
+        S.irate();
+        I.irate();
+        H.irate(); 
+    }
+}
+
+128) //*Super in java*//
+
+import java.lang.*;
+class Emp
+{
+    int eno;
+    String ename;
+    double esal;
+    Emp(int eno, String ename, double esal)
+    {
+        this.eno = eno;
+        this.ename = ename;
+        this.esal = esal;
+    }
+}
+
+class Dept extends Emp
+{
+    int deptno;
+    String deptname;
+    Dept(int eno, String ename, double esal, int deptno, String deptname)
+    {
+        super(eno, ename, esal);
+        this.deptno = deptno;
+        this.deptname = deptname;
+    }
+    void dispempdet()
+    {
+        System.out.println("Eno = " + eno + "\t" + "Ename = " + ename + "\t" + "Esal = " + esal + "\tDeptno = " + deptno + "\tDeptname = " + deptname);
+    }
+}
+
+class Main
+{
+    public static void main(String args[])
+    {
+        Dept D = new Dept(101, "Pyari", 450000, 1, "Manager");
+        D.dispempdet();
+    }
+}
+
+
+129) //*Write a java program for Exception Handling*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a=100;
+        int b=0;
+        int c;
+        System.out.println("Begin");
+        System.out.println("Ready to do division");
+        c=a/b;
+        System.out.println("Result is ="+c);
+        System.out.println("Division Completed");
+        System.out.println("End");
+    }
+}
+
+
+130) //*Write a java program for Exception Handling using try and catch method*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a=100;
+        int b=0;
+        int c;
+        try{
+            System.out.println("Begin");
+            System.out.println("Ready to do division");
+            c=a/b;
+            System.out.println("Result is ="+c);
+            System.out.println("Division Completed");
+            System.out.println("End");
+        }catch(Exception e)
+        {
+            System.out.println("Division with zero is not possible");
+        }
+
+     }
+}
+
+131)//*Write s java program for exceptionn handling using try and catch method*//
+
+import java.lang.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        int a=100;
+        int b=0;
+        int c;
+        try {
+            System.out.println("Begin");
+            System.out.println("Ready to do division");
+            c=a/b;
+            System.out.println("Result is ="+c);
+            System.out.println("Division Completed");
+            System.out.println("End");
+        } catch(Exception e)
+        {
+            System.out.println("Exception caught: "+e.getMessage());
+        }
+        finally
+        {
+            System.out.println("Code execution is done");
+        }
+    }
+}
+
+132)//* Write a java program for User Defined Exception*//
+
+import java.lang.*;
+class MyException extends Exception
+{
+    int ex;
+    MyException(int a)
+    {
+        ex=a;
+    }
+    public String toString()
+    {
+        return "My Exception["+ex+"] is less than zero";
+    }
+}
+class Main
+{
+    static void sum(int a,int b)throws MyException
+    {
+        if(a<0)
+        {
+            throw new MyException(a);
+        }
+        else
+        {
+            System.out.println(a+b);
+        }
+    }
+        public static void main(String args[])
+        {
+            try
+            {
+              sum(-11,10);  
+            } catch(MyException me)
+            {
+                System.out.println(me);
+            }
+        }
+        }
+
+
+
+

@@ -1,0 +1,343 @@
+//* Area of a rectangle
+
+import java.lang.*;
+import java.util.*;
+class Area
+{
+    Scanner SC=new Scanner(System.in);
+    int length;
+    int breadth;
+    void getVals()
+    {
+        System.out.print("Enter length...:");
+        length=SC.nextInt();
+        System.out.print("Enter Breadth..:");
+        breadth=SC.nextInt();
+    }
+    void putVals()
+    {
+        System.out.println("Length of a rectangle is...: "+length);
+        System.out.println("Breadth of a rectangle is...: "+breadth);
+    }
+        int myArea()
+        {
+           return length*breadth;
+        }
+    }
+    class Main
+    {
+        public static void main(String args[])
+        {
+         Area A=new Area();
+         A.getVals();
+         A.putVals();
+         System.out.println("Area of a rectangle is = "+A.myArea());
+        }
+    }
+
+2//Area of a Circle
+
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+class AreaCircle
+{
+    Scanner SC=new Scanner(System.in);
+    double r,c,a;
+    void getVals()
+    {
+    System.out.print("Enter Radius..:");
+    r=SC.nextDouble();
+    }
+    void putVals()
+    {
+        System.out.print("Radius is...: "+r);
+    }
+    
+    double myCircumference()
+    {
+        return 2*Math.PI*r; 
+    }
+    double myAreaCircle()
+    {
+        return Math.PI*(r*r);
+    }
+}
+    class Main
+    {
+        public static void main(String args[])
+        {
+            AreaCircle AC=new AreaCircle();
+            AC.getVals();
+            AC.putVals();
+            System.out.println();
+            System.out.println("Circumferencs of a Circle..: "+AC.myCircumference());
+            System.out.println("Area of a Circle..: "+AC.myAreaCircle());
+        }
+    }
+
+}
+
+3)//* Simple Intrest and compound intrest
+
+import java.lang.*;
+import java.util.*;
+class MyIntrest
+{
+  Scanner SC = new Scanner (System.in);
+  double p, t, r, si;
+  void getVals ()
+  {
+    System.out.print ("Enter Principal amount...:");
+    p = SC.nextDouble ();
+
+    System.out.print ("Enter Time..:");
+    t = SC.nextDouble ();
+
+    System.out.print ("Enter Intrest Rate..:");
+    r = SC.nextDouble ();
+  }
+  void putVals ()
+  {
+    System.out.println("Principal amount is...: "+ p);
+    System.out.println("Time is...: "+t);
+    System.out.println("Intrest Rate is...: "+r);
+  }
+  double mySimpleIntrest()
+  {
+      return (p*t*r)/100;
+  }
+  double myCompoundIntrest()
+  {
+      return p*(Math.pow((1+r/100),t))-p;
+  }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        MyIntrest MI=new MyIntrest();
+        MI.getVals();
+        System.out.println("-----------------------------------------------------");
+        MI.putVals();
+        System.out.println("-----------------------------------------------------");
+        System.out.println("Simple Intrest is..: "+MI.mySimpleIntrest());
+        System.out.println("Compound Intrest is..: "+MI.myCompoundIntrest());
+    }
+}
+
+4)//* Student Marks REport
+
+import java.lang.*;
+import java.util.*;
+class StudentMarksReport
+{
+  Scanner SC = new Scanner (System.in);
+  int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+  float av;
+  String sname,ssec;
+  void getVals()
+  {
+      System.out.print("Enter Student number...:");
+      sno=SC.nextInt();
+      
+      System.out.print("Enter Sname..:");
+      sname=SC.next();
+ 
+      System.out.print("Enter Sclass..:");
+      sclass=SC.nextInt();
+ 
+      System.out.print("Enter Ssec..:");
+      ssec=SC.next();
+ 
+      System.out.print("Enter m1..:");
+      m1=SC.nextInt();
+ 
+      System.out.print("Enter m2..:");
+      m2=SC.nextInt();
+ 
+      System.out.print("Enter m3..:");
+      m3=SC.nextInt();
+ 
+      System.out.print("Enter m4..:");
+      m4=SC.nextInt();
+ 
+      System.out.print("Enter m5..:");
+      m5=SC.nextInt();
+ 
+      System.out.print("Enter m6..:");
+      m6=SC.nextInt();
+  }
+  
+  void putVals()
+  {
+        System.out.println("--------------------------------------------------------");
+        System.out.println("\t\tSTUDENT MARKS DETAILS");
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Sno = "+sno+"\t"+"Sname = "+sname);
+        System.out.println("Sclass = "+sclass+"\t"+"Ssec = "+ssec);
+        System.out.println("m1 = "+m1+"\t\t"+"m2 = "+m2+"\t\t"+"m3 = "+m3);
+        System.out.println("m4 = "+m4+"\t\t"+"m5 = "+m5+"\t\t"+"m6 = "+m6);
+        System.out.println("--------------------------------------------------------");
+  }
+  
+  int myTotal()
+  {
+      return m1+m2+m3+m4+m5+m6;
+  }
+  
+  float myAverage()
+  {
+      return tot/6;
+  }
+  
+}
+  class Main
+      {
+              public static void main(String args[])
+              {
+          StudentMarksReport MR=new StudentMarksReport();
+          MR.getVals();
+          MR.putVals();
+          System.out.println("Total Marks....: "+MR.myTotal());
+          System.out.println("Average Marks....: "+MR.myAverage());
+      }
+      }
+          
+  6)//Employee Details
+
+import java.lang.*;
+import java.util.*;
+class EmployeeDetails
+{
+  Scanner SC = new Scanner (System.in);
+    int eno;
+    String ename;
+    double esal;
+    float epf;
+    char egrade;
+  void getVals()
+  {
+    System.out.print("Enter Eno..:");
+    eno=SC.nextInt();
+        
+    System.out.print("Enter Ename..:");
+    ename=SC.next();
+        
+    System.out.print("Enter Esalary..:");
+    esal=SC.nextDouble();
+        
+    System.out.print("Enter Epf..:");
+    epf=SC.nextFloat();
+        
+    System.out.print("Enter Egrade..:");
+    egrade=SC.next().charAt(0);
+  }
+  
+  void putVals()
+  {
+        System.out.println("=====================================================");
+        System.out.println("\tEmployee Details");
+        System.out.println("=====================================================");
+        System.out.println("Eno     "+eno);
+        System.out.println("Ename   "+ename);
+        System.out.println("Esalary "+esal);
+        System.out.println("Epf     "+epf);
+        System.out.println("Egrade  "+egrade);
+        System.out.println("=====================================================");
+  }
+  
+  
+}
+  class Main
+      {
+              public static void main(String args[])
+              {
+          EmployeeDetails ED=new EmployeeDetails();
+          ED.getVals();
+          ED.putVals();
+      }
+      }
+          
+  
+
+7)// Temperature
+import java.lang.*;
+import java.util.*;
+class TemperatureDetails
+{
+  Scanner SC = new Scanner (System.in);
+  double ci,f;
+  void getVals()
+  {
+      System.out.print("Enter Temperature in Fahrenheit..... : ");
+      f=SC.nextDouble();
+  }
+  int putVals()
+  {
+      System.out.println("Temperature you entered in Fahrenheit..... : "+f);
+  }
+  int Celcius()
+  {
+      return (f-32)*5/9;
+  }
+  
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        TemperatureDetails TD=new TemperatureDetails();
+        TD.getVals();
+        TD.putVals();
+        System.out.println("Temperature in Celcius..... :"+TD.Celcius());
+    }
+}
+    
+
+====================================================================================
+import java.lang.*;
+class IceCream
+{
+    int price;
+    int quantity;
+    double weight;
+    String color;
+    Void melt()
+    {
+        System.out.println("it's melts at room temperature");
+    }
+    int BillAmt()
+    {
+        return price*quantity;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        IceCream vanilla=new IceCream();
+        vanilla.price=20;
+        vanilla.quantity=100;
+        vanilla.weight=45.5;
+        vanilla.color="White";
+        System.out.println("Price of vanilla = "+vanilla.price);
+        System.out.println("Quantity of vanilla = "+vanilla.quantity);
+        System.out.println("Weight of vanilla = "+vanilla.weight);
+        System.out.println("Color of vanilla = "+vanilla.color);
+        System.out.println("Bill Amount = "+vanilla.BillAmt());
+        vanilla.melt();
+        System.out.println("------------------------------------------------------");
+        IceCream butterscotch=new IceCream();
+        butterscotch.price=45;
+        butterscotch.quantity=250;
+        butterscotch.weight=25.5;
+        butterscotch.color="pale yellow";
+        System.out.println("Price of vanilla = "+butterscotch.price);
+        System.out.println("Quantity of vanilla = "+butterscotch.quantity);
+        System.out.println("Weight of vanilla = "+butterscotch.weight);
+        System.out.println("Color of vanilla = "+butterscotch.color);
+        System.out.println("Bill Amount = "+butterscotch.BillAmt());
+        butterscotch.melt();
+    }
+}
